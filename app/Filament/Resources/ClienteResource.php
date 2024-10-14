@@ -129,8 +129,7 @@ class ClienteResource extends Resource
             Tables\Columns\TextColumn::make('cidade.nome')
                 ->label('Cidade'),
             Tables\Columns\TextColumn::make('telefone_1')
-
-                ->formatStateUsing(fn (string $state) => vsprintf('(%d%d)%d%d%d%d%d-%d%d%d%d', str_split($state)))
+               // ->formatStateUsing(fn (string $state) => vsprintf('(%d%d)%d%d%d%d%d-%d%d%d%d', str_split($state)))
                 ->label('Telefone'),
 
             Tables\Columns\TextColumn::make('email')
