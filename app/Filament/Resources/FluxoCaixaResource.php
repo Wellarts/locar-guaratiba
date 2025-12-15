@@ -112,7 +112,6 @@ class FluxoCaixaResource extends Resource
             ->actions([
                 Tables\Actions\EditAction::make()
                     ->modalHeading('Editar lançamento de caixa'),
-                    
                 Tables\Actions\DeleteAction::make(),
             ])
             ->bulkActions([
